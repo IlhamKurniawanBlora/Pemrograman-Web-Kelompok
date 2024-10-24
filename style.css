@@ -1,0 +1,125 @@
+/* Mengatur gaya dasar untuk seluruh halaman */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mengatur kontainer utama */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Mengatur gaya untuk form */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+/* Menambahkan efek hover pada form */
+form:hover {
+    transform: scale(1.02);
+}
+
+/* Mengatur gaya untuk judul form */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Mengatur jarak antara label dan input */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Mengatur gaya input */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Mengatur efek fokus pada input */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Mengatur gaya tombol submit */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Mengatur efek hover untuk tombol submit */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Mengatur gaya untuk hasil yang ditampilkan */
+#result {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    color: #333;
+}
+
+/* Mengatur gaya untuk teks penjelasan */
+h3 {
+    margin-top: 20px;
+    color: black;
+}
+a {
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-align: center;
+    border: black solid 1px;
+    background-color: #007bff;
+    color: black;
+    text-decoration: none;
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+/* Menambahkan media query untuk responsivitas */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
